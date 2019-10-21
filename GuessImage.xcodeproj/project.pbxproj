@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE5E3823235D6FA50089D4B0 /* questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE5E3822235D6FA50089D4B0 /* questions.plist */; };
 		BECFA5E72359DFCC002E13DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BECFA5E62359DFCC002E13DC /* AppDelegate.m */; };
 		BECFA5EA2359DFCC002E13DC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BECFA5E92359DFCC002E13DC /* SceneDelegate.m */; };
 		BECFA5ED2359DFCC002E13DC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BECFA5EC2359DFCC002E13DC /* ViewController.m */; };
@@ -16,7 +17,6 @@
 		BECFA5F82359DFCD002E13DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BECFA5F72359DFCD002E13DC /* main.m */; };
 		BECFA6022359DFCD002E13DC /* GuessImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BECFA6012359DFCD002E13DC /* GuessImageTests.m */; };
 		BECFA60D2359DFCD002E13DC /* GuessImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BECFA60C2359DFCD002E13DC /* GuessImageUITests.m */; };
-		BECFA6202359E2AD002E13DC /* questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = BECFA61F2359E2AD002E13DC /* questions.plist */; };
 		BECFA6232359E3D4002E13DC /* GKQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = BECFA6222359E3D4002E13DC /* GKQuestion.m */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE5E3822235D6FA50089D4B0 /* questions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = questions.plist; sourceTree = "<group>"; };
 		BECFA5E22359DFCC002E13DC /* GuessImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECFA5E52359DFCC002E13DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BECFA5E62359DFCC002E13DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,7 +57,6 @@
 		BECFA6082359DFCD002E13DC /* GuessImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuessImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECFA60C2359DFCD002E13DC /* GuessImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuessImageUITests.m; sourceTree = "<group>"; };
 		BECFA60E2359DFCD002E13DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BECFA61F2359E2AD002E13DC /* questions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = questions.plist; path = ../../../gitee/GuessImage/GuessImage/GuessImage/questions.plist; sourceTree = "<group>"; };
 		BECFA6212359E3D4002E13DC /* GKQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKQuestion.h; sourceTree = "<group>"; };
 		BECFA6222359E3D4002E13DC /* GKQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKQuestion.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,7 +109,7 @@
 		BECFA5E42359DFCC002E13DC /* GuessImage */ = {
 			isa = PBXGroup;
 			children = (
-				BECFA61F2359E2AD002E13DC /* questions.plist */,
+				BE5E3822235D6FA50089D4B0 /* questions.plist */,
 				BECFA61E2359E164002E13DC /* Others */,
 				BECFA61D2359E15A002E13DC /* Views */,
 				BECFA61B2359E137002E13DC /* Models */,
@@ -281,8 +281,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BECFA6202359E2AD002E13DC /* questions.plist in Resources */,
 				BECFA5F52359DFCD002E13DC /* LaunchScreen.storyboard in Resources */,
+				BE5E3823235D6FA50089D4B0 /* questions.plist in Resources */,
 				BECFA5F22359DFCD002E13DC /* Assets.xcassets in Resources */,
 				BECFA5F02359DFCC002E13DC /* Main.storyboard in Resources */,
 			);
