@@ -16,6 +16,8 @@
 		BECFA5F82359DFCD002E13DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BECFA5F72359DFCD002E13DC /* main.m */; };
 		BECFA6022359DFCD002E13DC /* GuessImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BECFA6012359DFCD002E13DC /* GuessImageTests.m */; };
 		BECFA60D2359DFCD002E13DC /* GuessImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BECFA60C2359DFCD002E13DC /* GuessImageUITests.m */; };
+		BECFA6202359E2AD002E13DC /* questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = BECFA61F2359E2AD002E13DC /* questions.plist */; };
+		BECFA6232359E3D4002E13DC /* GKQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = BECFA6222359E3D4002E13DC /* GKQuestion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,9 @@
 		BECFA6082359DFCD002E13DC /* GuessImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuessImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECFA60C2359DFCD002E13DC /* GuessImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuessImageUITests.m; sourceTree = "<group>"; };
 		BECFA60E2359DFCD002E13DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BECFA61F2359E2AD002E13DC /* questions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = questions.plist; path = ../../../gitee/GuessImage/GuessImage/GuessImage/questions.plist; sourceTree = "<group>"; };
+		BECFA6212359E3D4002E13DC /* GKQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKQuestion.h; sourceTree = "<group>"; };
+		BECFA6222359E3D4002E13DC /* GKQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKQuestion.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,15 +109,12 @@
 		BECFA5E42359DFCC002E13DC /* GuessImage */ = {
 			isa = PBXGroup;
 			children = (
-				BECFA5E52359DFCC002E13DC /* AppDelegate.h */,
-				BECFA5E62359DFCC002E13DC /* AppDelegate.m */,
-				BECFA5E82359DFCC002E13DC /* SceneDelegate.h */,
-				BECFA5E92359DFCC002E13DC /* SceneDelegate.m */,
-				BECFA5EB2359DFCC002E13DC /* ViewController.h */,
-				BECFA5EC2359DFCC002E13DC /* ViewController.m */,
-				BECFA5EE2359DFCC002E13DC /* Main.storyboard */,
+				BECFA61F2359E2AD002E13DC /* questions.plist */,
+				BECFA61E2359E164002E13DC /* Others */,
+				BECFA61D2359E15A002E13DC /* Views */,
+				BECFA61B2359E137002E13DC /* Models */,
+				BECFA61A2359E086002E13DC /* Controllers */,
 				BECFA5F12359DFCD002E13DC /* Assets.xcassets */,
-				BECFA5F32359DFCD002E13DC /* LaunchScreen.storyboard */,
 				BECFA5F62359DFCD002E13DC /* Info.plist */,
 				BECFA5F72359DFCD002E13DC /* main.m */,
 			);
@@ -135,6 +137,44 @@
 				BECFA60E2359DFCD002E13DC /* Info.plist */,
 			);
 			path = GuessImageUITests;
+			sourceTree = "<group>";
+		};
+		BECFA61A2359E086002E13DC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BECFA5EB2359DFCC002E13DC /* ViewController.h */,
+				BECFA5EC2359DFCC002E13DC /* ViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BECFA61B2359E137002E13DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BECFA6212359E3D4002E13DC /* GKQuestion.h */,
+				BECFA6222359E3D4002E13DC /* GKQuestion.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BECFA61D2359E15A002E13DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BECFA5F32359DFCD002E13DC /* LaunchScreen.storyboard */,
+				BECFA5EE2359DFCC002E13DC /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BECFA61E2359E164002E13DC /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				BECFA5E82359DFCC002E13DC /* SceneDelegate.h */,
+				BECFA5E92359DFCC002E13DC /* SceneDelegate.m */,
+				BECFA5E52359DFCC002E13DC /* AppDelegate.h */,
+				BECFA5E62359DFCC002E13DC /* AppDelegate.m */,
+			);
+			path = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +239,7 @@
 		BECFA5DA2359DFCC002E13DC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = GK;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Zhuang Yang";
 				TargetAttributes = {
@@ -240,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BECFA6202359E2AD002E13DC /* questions.plist in Resources */,
 				BECFA5F52359DFCD002E13DC /* LaunchScreen.storyboard in Resources */,
 				BECFA5F22359DFCD002E13DC /* Assets.xcassets in Resources */,
 				BECFA5F02359DFCC002E13DC /* Main.storyboard in Resources */,
@@ -271,6 +313,7 @@
 				BECFA5E72359DFCC002E13DC /* AppDelegate.m in Sources */,
 				BECFA5F82359DFCD002E13DC /* main.m in Sources */,
 				BECFA5EA2359DFCC002E13DC /* SceneDelegate.m in Sources */,
+				BECFA6232359E3D4002E13DC /* GKQuestion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +485,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZP9DCD9MT3;
 				INFOPLIST_FILE = GuessImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +503,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZP9DCD9MT3;
 				INFOPLIST_FILE = GuessImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
