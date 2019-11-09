@@ -10,7 +10,8 @@
 #import "GKQuestion.h"
 
 @interface ViewController ()
-
+//v1.0.0
+//vvvvv
 //所有的数据都存储在这个数组中
 @property (nonatomic,strong) NSArray *questions;
 
