@@ -18,7 +18,7 @@
 //控制题目索引
 @property (nonatomic,assign) int index;
 
-//编号控件
+//控件编号
 @property (weak, nonatomic) IBOutlet UILabel *lblNo;
 
 //标题控件
